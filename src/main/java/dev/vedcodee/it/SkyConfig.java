@@ -69,7 +69,6 @@ public abstract class SkyConfig {
         set(patch, toString.toString());
     }
 
-
     // Getters
     public Object get(String patch) {
         return configuration.get(patch);
@@ -85,6 +84,10 @@ public abstract class SkyConfig {
 
     public int getInt(String patch) {
         return configuration.getInt(patch);
+    }
+
+    public boolean getBool(String patch) {
+        return configuration.getBoolean(patch);
     }
 
     public Location getLocation(String patch) {
